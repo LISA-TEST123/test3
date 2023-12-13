@@ -1,0 +1,30 @@
+name: Bug
+description: Default Issue Type Form
+title: "[Bug]: "
+type: Bug
+labels: ["bug", "triage"]
+assignees:
+  - lukewar
+  - j0siepy
+projects: "lemongrasss/104"
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Expected behaviour?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Type here
+    validations:
+      required: true
+  - type: dropdown
+    id: Priority
+    attributes:
+      label: Priority
+      description: What's the impact?
+      options:
+        - P0
+        - P1
+        - P2
+        - P3
+    validations:
+      required: true
